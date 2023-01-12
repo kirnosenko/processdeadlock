@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  
+  processdeadlock:
+    image: processdeadlock
+    container_name: processdeadlock
+    deploy:
+      restart_policy:
+        condition: on-failure
